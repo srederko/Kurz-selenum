@@ -1,0 +1,144 @@
+{
+  "id": "986e94b2-0345-4c43-bef9-1f310be94eae",
+  "version": "2.0",
+  "name": "P0002_prikazy_selenium_selenes",
+  "url": "https://www.google.sk",
+  "tests": [{
+    "id": "60a7b925-171d-4783-928b-5ddcf701d8e4",
+    "name": "TC_001_otvorenie_web_stranok",
+    "commands": [{
+      "id": "9bc105ed-cf08-4e22-9f55-36a0b7109056",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.sk",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d66bbc7-2d57-4e74-b78a-c207b54abf13",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e87f80a3-c727-4ca8-b0b0-07b3e77673b3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.slovensko.sk",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "696c213a-f2fe-4782-b05a-4d36073a50b5",
+    "name": "TC_002_Cakanie_Element_Wait",
+    "commands": [{
+      "id": "2ef52aca-f2b4-45bf-87aa-9bffc032c049",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ad9207c-59a2-40df-8f07-615f051820c9",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.fb_logo",
+      "targets": [
+        ["css=.fb_logo", "css:finder"],
+        ["xpath=//img[@alt='Facebook']", "xpath:img"],
+        ["xpath=//div[@id='content']/div/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/img", "xpath:position"]
+      ],
+      "value": "3000"
+    }, {
+      "id": "d193fe29-c26b-4964-8cda-a90b2bee20b9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.slovensko.sk/sk/titulna-stranka",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1283025-9f6c-499b-9f8f-61f0c7786b04",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#logo > img",
+      "targets": [
+        ["css=#logo > img", "css:finder"],
+        ["xpath=//img[@alt='Ústredný portál verejných služieb ľuďom']", "xpath:img"],
+        ["xpath=//a[@id='logo']/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "3000"
+    }, {
+      "id": "5be2e257-8823-40a4-a2b6-6e2bef3faab8",
+      "comment": "",
+      "command": "echo",
+      "target": "Test úspešný ",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cf1cb77c-9c3d-4eb4-a673-6fc9a4e32048",
+    "name": "TC_003_Cakanie_Element_Wait_Visible",
+    "commands": [{
+      "id": "ebe3a2a9-a124-4b04-a88a-2377455b3299",
+      "comment": "",
+      "command": "//Moja poznamka začiatok testu",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e15ff196-9530-4cad-b55a-1c606a6595fd",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8863f870-15c3-41f4-8b74-05936c54a4e1",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=.fb_logo",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "d0ec53e0-ae49-4ab6-a495-7f03a94c07f0",
+      "comment": "",
+      "command": "open",
+      "target": "https://alza.sk",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c9388ce-6273-4ed6-828d-755423fc4cc2",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=#logo > img",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "d5782487-b10a-4162-a2d0-a9a152b4a098",
+      "comment": "",
+      "command": "echo",
+      "target": "Test úspešný ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53595967-0583-41f9-a137-bf3b3e413195",
+      "comment": "",
+      "command": "//Moja poznámka koniec testu",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ac3de57d-d795-48c7-ba2a-c40f246014e2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["60a7b925-171d-4783-928b-5ddcf701d8e4"]
+  }],
+  "urls": ["https://www.google.sk/"],
+  "plugins": []
+}

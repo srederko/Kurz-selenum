@@ -1,0 +1,84 @@
+{
+  "id": "fbf7a09c-fae4-48f7-b80a-3ba7f3b6eea5",
+  "version": "2.0",
+  "name": "P001_Nahravanie_testu",
+  "url": "https://www.google.sk",
+  "tests": [{
+    "id": "6db9e792-e172-437d-93e0-40d3bafa0094",
+    "name": "P001",
+    "commands": [{
+      "id": "12a8eb53-7a87-4b5c-98f9-eca477e44db8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af4e6a79-1a27-444c-8d17-33a51e42edea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1037",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5746e063-d93f-433b-bba8-246606784141",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "selen"
+    }, {
+      "id": "daceafeb-22c9-4e0f-836e-8cf4c28526d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sbhl .wM6W7d > span",
+      "targets": [
+        ["css=.sbhl .wM6W7d > span", "css:finder"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'selenium ide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79d186e9-aa84-44e8-88b8-a5821b9cb73e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jNVrwc > div:nth-child(2) .LC20lb",
+      "targets": [
+        ["css=.jNVrwc > div:nth-child(2) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Selenium IDE · Open source record and playback test ...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fd69ae2-94e6-4582-af20-36642627fcae",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Docs",
+      "targets": [
+        ["linkText=Docs", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Docs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/selenium-ide/docs/en/introduction/getting-started')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Docs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "474a490e-bafa-434b-b56d-1eb6f1c99399",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6db9e792-e172-437d-93e0-40d3bafa0094"]
+  }],
+  "urls": ["https://www.google.sk/"],
+  "plugins": []
+}
