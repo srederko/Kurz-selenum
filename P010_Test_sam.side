@@ -1,0 +1,131 @@
+{
+  "id": "8eab11b6-f9fe-4262-b881-41c05155a004",
+  "version": "2.0",
+  "name": "P010_Test_sam",
+  "url": "https://opensource-demo.orangehrmlive.com/index.php/dashboard",
+  "tests": [{
+    "id": "9993e06e-177a-4b58-84a6-887fd8fcf6bd",
+    "name": "TC_001_Formular_odchodov",
+    "commands": [{
+      "id": "2b6e00a1-9d4d-4114-9487-c55619e20d3a",
+      "comment": "",
+      "command": "open",
+      "target": "https://opensource-demo.orangehrmlive.com/index.php/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97e2ac20-6c6b-459a-a13d-5ed9102df749",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(1) img",
+      "targets": [
+        ["css=td:nth-child(1) img", "css:finder"],
+        ["xpath=//div[@id='dashboard-quick-launch-panel-menu_holder']/table/tbody/tr/td/div/a/img", "xpath:idRelative"],
+        ["xpath=//td/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "355dacc6-5022-4c86-a473-cafbb7976fc4",
+      "comment": "",
+      "command": "type",
+      "target": "id=assignleave_txtEmployee_empName",
+      "targets": [
+        ["id=assignleave_txtEmployee_empName", "id"],
+        ["name=assignleave[txtEmployee][empName]", "name"],
+        ["css=#assignleave_txtEmployee_empName", "css:finder"],
+        ["xpath=//input[@id='assignleave_txtEmployee_empName']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLeaveApply']/fieldset/ol/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "Adrian"
+    }, {
+      "id": "5260ffaf-0593-4f74-982e-d7b0dda3e8b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=assignleave_txtLeaveType",
+      "targets": [
+        ["id=assignleave_txtLeaveType", "id"],
+        ["name=assignleave[txtLeaveType]", "name"],
+        ["css=#assignleave_txtLeaveType", "css:finder"],
+        ["xpath=//select[@id='assignleave_txtLeaveType']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLeaveApply']/fieldset/ol/li[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'--Select--\nCAN - Bereavement\nCAN - FMLA\nCAN - Matternity\nCAN - Personal\nCAN - Vacation\nUS - Bereavement\nUS - FMLA\nUS - Matternity\nUS - Personal\nUS - Vacation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3ff8707-0f69-4f89-8c7b-76591fd00e7d",
+      "comment": "",
+      "command": "select",
+      "target": "id=assignleave_txtLeaveType",
+      "targets": [],
+      "value": "label=US - Personal"
+    }, {
+      "id": "6edb6cd5-0702-4fff-9d13-469dcedfe4cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=assignleave_txtFromDate",
+      "targets": [
+        ["id=assignleave_txtFromDate", "id"],
+        ["name=assignleave[txtFromDate]", "name"],
+        ["css=#assignleave_txtFromDate", "css:finder"],
+        ["xpath=//input[@id='assignleave_txtFromDate']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLeaveApply']/fieldset/ol/li[4]/input", "xpath:idRelative"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e92edf9-1749-4fee-824b-0acfcb3e0d2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=23",
+      "targets": [
+        ["linkText=23", "linkText"],
+        ["css=.ui-state-highlight", "css:finder"],
+        ["xpath=//a[contains(text(),'23')]", "xpath:link"],
+        ["xpath=//div[@id='ui-datepicker-div']/table/tbody/tr[4]/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[42]", "xpath:href"],
+        ["xpath=//tr[4]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'23')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5735930f-2a6f-4492-a829-9c3b77331971",
+      "comment": "",
+      "command": "click",
+      "target": "id=assignleave_txtComment",
+      "targets": [
+        ["id=assignleave_txtComment", "id"],
+        ["name=assignleave[txtComment]", "name"],
+        ["css=#assignleave_txtComment", "css:finder"],
+        ["xpath=//textarea[@id='assignleave_txtComment']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLeaveApply']/fieldset/ol/li[10]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8996572e-b182-4620-986d-38d0e08802a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=assignBtn",
+      "targets": [
+        ["id=assignBtn", "id"],
+        ["css=#assignBtn", "css:finder"],
+        ["xpath=//input[@id='assignBtn']", "xpath:attributes"],
+        ["xpath=//form[@id='frmLeaveApply']/fieldset/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c432f62d-3269-4486-9358-6ca959016148",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9993e06e-177a-4b58-84a6-887fd8fcf6bd"]
+  }],
+  "urls": ["https://opensource-demo.orangehrmlive.com/index.php/dashboard"],
+  "plugins": []
+}
